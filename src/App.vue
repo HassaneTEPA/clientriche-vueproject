@@ -5,8 +5,10 @@
         <span>GAMEIO</span>
       </div>
       <div id="nav">
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
+        <router-link to="/">Accueil</router-link> |
+        <router-link to="/players">Joueurs</router-link> |
+        <router-link to="/teams">Equipes</router-link> |
+        <router-link to="/signin">Se connecter</router-link>
       </div>
     </div>
     <router-view/>
@@ -29,7 +31,7 @@
     color: white;
     list-style-type: none;
     display: flex;
-    background-color: #ee6c4d;
+    background-color: #7400b8;
     padding: 10px;
     a {
       color: white;

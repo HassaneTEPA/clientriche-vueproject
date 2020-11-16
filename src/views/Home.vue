@@ -1,26 +1,31 @@
 <template>
   <div class="home">
     <div class="text-container">
+      <img class="logo-main" src="../assets/img/controller.png" alt="Image d'accueil manette de jeux vidéos">
       <h1>Trouvez une équipe ou recrutez des joueurs</h1>
       <p>Marre de jouer en solo ? Ou vous souhaitez trouver des joueurs pour des parties amicales ou pour conquérir le classement de vos jeux en ligne préférés ? Découvrez maintenant le services Gameio et construisez votre chemin jusqu'à la gloire et la victoire. Ensemble.</p>
     </div>
     <div class="cta-container">
-      <div class="block">
-        <div class="content left">
-          <div class="container">
-            <img src="../assets/svg/man-user.svg" alt="icon joueur">
-            <h2>Trouvez une équipe</h2>
+      <router-link class="block-link" to="teams">
+        <div class="block">
+          <div class="content left">
+            <div class="container">
+              <img src="../assets/svg/teamwork.svg" alt="icon joueur">
+              <h2>Trouvez une équipe</h2>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="block">
-        <div class="content right">
-          <div class="container">
-            <img src="../assets/svg/teamwork.svg" alt="icon joueur">
-            <h2>Trouvez des joueurs</h2>
+      </router-link>
+      <router-link class="block-link" to="/players">
+        <div class="block">
+          <div class="content right">
+            <div class="container">
+              <img src="../assets/svg/man-user.svg" alt="icon joueur">
+              <h2>Trouvez des joueurs</h2>
+            </div>
           </div>
         </div>
-      </div>
+      </router-link>
     </div>
     <h3>Créer, Gérer, Trouver, Jouer.</h3>
     <div class="infos">
@@ -62,7 +67,7 @@ export default {
     h3 {
         font-size: 1.4rem;
         color: black;
-        background-color: #ee6c4d;
+        background-color: #7400b8;
         color: white;
         text-align: center;
         padding: 20px;
@@ -70,6 +75,9 @@ export default {
         margin-bottom: 30px;
       }
     .text-container {
+      img {
+        width: 20%;
+      }
       text-align: center;
       color: white;
       h1 {
@@ -85,6 +93,9 @@ export default {
     .cta-container {
       display: flex;
       flex-wrap: wrap;
+      .block-link {
+        text-decoration: none;
+      }
       .block {
         width: 50vw;
         height: 40vh;
@@ -93,11 +104,11 @@ export default {
         background-repeat: no-repeat;
         cursor: pointer;
         .left:hover {
-            background-color: #ee6c4d;
+            background-color: #7400b8;
             transition: .2s;
           }
           .right:hover {
-            background-color: #ee6c4d;
+            background-color: #5390d9;
             transition: .2s;
           }
         .content {
