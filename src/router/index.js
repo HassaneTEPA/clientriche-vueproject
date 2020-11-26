@@ -11,11 +11,6 @@ const routes = [
     component: Home
   },
   {
-    path: '/teams',
-    name: 'Teams',
-    component: () => import('../views/Teams.vue')
-  },
-  {
     path: '/players',
     name: 'Players',
     component: () => import('../views/Players.vue')
@@ -25,6 +20,11 @@ const routes = [
     name: 'Signin',
     component: () => import('../views/Signin.vue')
   },
+  {
+    path: '/admin',
+    name: 'Admin',
+    component: () => import('../views/Admin.vue')
+  }
 ]
 
 const router = new VueRouter({
